@@ -1,6 +1,6 @@
 {
   "name": "sass-logical-properties",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "A Sass package providing logical property mixins and functions.",
   "main": "dist/sass-logical-properties.scss",
   "scripts": {
@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sturobson/sass-logical-properties.git"
+    "url": "git+https://github.com/sturobson/sass-logical-properties.git"
   },
   "bugs": {
     "url": "https://github.com/sturobson/sass-logical-properties/issues"

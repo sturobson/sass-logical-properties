@@ -1,4 +1,4 @@
-# My Sass Package
+# Sass Logical Properties
 
 A Sass package providing logical property mixins and functions. This package allows you to use CSS logical properties easily and provides utilities for working with CSS custom properties.
 
