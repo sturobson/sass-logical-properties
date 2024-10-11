@@ -1,0 +1,28 @@
+/// Processes a value to automatically convert CSS variables in the format `--value` to `var(--value)`.
+/// If the input is not a CSS variable, it returns the value unchanged.
+///
+/// @function slp-process-value
+/// @param {*} $value - The value to process. Can be a string, number, or any type of data.
+/// @return {*} - If the value is a string starting with `--`, it returns `var(--value)`. Otherwise, it returns the value as is.
+///
+/// @example scss - Using a CSS variable
+///   .example {
+///     color: slp-process-value(--primary-color);
+///     // Output: color: var(--primary-color);
+///   }
+///
+/// @example scss - Using a static value
+///   .example {
+///     margin: slp-process-value(20px);
+///     // Output: margin: 20px;
+///   }
+
+@function slp-process-value($value) {
+  @if type-of($value)=='string' and str-index($value, '--')==1 {
+    @return var(#{$value});
+  }
+
+  @else {
+    @return $value;
+  }
+}

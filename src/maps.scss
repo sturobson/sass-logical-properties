@@ -1,0 +1,14 @@
+$logical-map: (
+  top: block-start,
+  bottom: block-end,
+  left: inline-start,
+  right: inline-end
+);
+
+// Map for border-radius sides
+$logical-border-radius-map: (
+  top-left: start-start,
+  top-right: start-end,
+  bottom-left: end-start,
+  bottom-right: end-end
+);

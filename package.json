@@ -1,0 +1,32 @@
+{
+  "name": "sass-logical-properties",
+  "version": "0.1.0",
+  "description": "A Sass package providing logical property mixins and functions.",
+  "main": "dist/sass-logical-properties.scss",
+  "scripts": {
+    "build": "sass src:dist --no-source-map",
+    "watch": "sass --watch src:dist --no-source-map"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "mixins",
+    "logical-properties",
+    "utility",
+    "package"
+  ],
+  "author": "Stuart Robson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sturobson/sass-logical-properties.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sturobson/sass-logical-properties/issues"
+  },
+  "homepage": "https://github.com/sturobson/sass-logical-properties#readme",
+  "devDependencies": {
+    "sass": "^1.32.0"
+  }
+}

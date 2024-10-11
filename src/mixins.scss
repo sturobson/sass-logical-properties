@@ -1,0 +1,98 @@
+// Mixin for logical margin using a map lookup
+@mixin logical-margin($side, $value) {
+  $processed-value: slp-process-value($value);
+  $logical-side: map-get($logical-map, $side);
+
+  @if $logical-side {
+    // Create the property name dynamically using string interpolation
+    #{'margin-' + $logical-side}: #{$processed-value};
+  }
+
+  @else {
+    @warn "Invalid side `#{$side}` specified for logical-margin mixin.";
+  }
+}
+
+// Mixin for logical padding using a map lookup
+@mixin logical-padding($side, $value) {
+  $processed-value: slp-process-value($value);
+  $logical-side: map-get($logical-map, $side);
+
+  @if $logical-side {
+    #{'padding-' + $logical-side}: #{$processed-value};
+  }
+
+  @else {
+    @warn "Invalid side `#{$side}` specified for logical-padding mixin.";
+  }
+}
+
+// Mixin for logical border using dynamic property names
+@mixin logical-border($side, $value) {
+  $processed-value: slp-process-value($value);
+  $logical-side: map-get($logical-map, $side);
+
+  @if $logical-side {
+    #{'border-' + $logical-side}: #{$processed-value};
+  }
+
+  @else {
+    @warn "Invalid side `#{$side}` specified for logical-border mixin.";
+  }
+}
+
+// Mixin for logical border-style using dynamic property names
+@mixin logical-border-style($side, $value) {
+  $processed-value: slp-process-value($value);
+  $logical-side: map-get($logical-map, $side);
+
+  @if $logical-side {
+    #{'border-' + $logical-side + '-style'}: #{$processed-value};
+  }
+
+  @else {
+    @warn "Invalid side `#{$side}` specified for logical-border-style mixin.";
+  }
+}
+
+// Mixin for logical border-color using dynamic property names
+@mixin logical-border-color($side, $value) {
+  $processed-value: slp-process-value($value);
+  $logical-side: map-get($logical-map, $side);
+
+  @if $logical-side {
+    #{'border-' + $logical-side + '-color'}: #{$processed-value};
+  }
+
+  @else {
+    @warn "Invalid side `#{$side}` specified for logical-border-color mixin.";
+  }
+}
+
+// Mixin for logical border-width using dynamic property names
+@mixin logical-border-width($side, $value) {
+  $processed-value: slp-process-value($value);
+  $logical-side: map-get($logical-map, $side);
+
+  @if $logical-side {
+    #{'border-' + $logical-side + '-width'}: #{$processed-value};
+  }
+
+  @else {
+    @warn "Invalid side `#{$side}` specified for logical-border-width mixin.";
+  }
+}
+
+// Mixin for logical border-radius using dynamic property names
+@mixin logical-border-radius($corner, $value) {
+  $processed-value: slp-process-value($value);
+  $logical-corner: map-get($logical-border-radius-map, $corner);
+
+  @if $logical-corner {
+    #{'border-' + $logical-corner + '-radius'}: #{$processed-value};
+  }
+
+  @else {
+    @warn "Invalid corner `#{$corner}` specified for logical-border-radius mixin.";
+  }
+}

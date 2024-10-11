@@ -1,0 +1,33 @@
+# Ignore all files in src (since users will use compiled files in dist)
+
+src/
+
+# Ignore config and metadata files
+
+.git/
+.gitignore
+.npmignore
+.editorconfig
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore node_modules folder (as npm installs dependencies automatically)
+
+node_modules/
+
+# Ignore logs
+
+npm-debug.log
+yarn-error.log
+*.log
+
+# Ignore build directories or temporary files
+
+.sass-cache/
+
+# Ignore Mac and Windows specific files
+
+.DS_Store
+Thumbs.db
