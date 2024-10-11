@@ -66,7 +66,7 @@ This function processes a value and automatically converts CSS custom properties
 
 ```scss
 .example {
-  color: process-value(--primary-color);  // Output: color: var(--primary-color);
+  color: slp-process-value(--primary-color);  // Output: color: var(--primary-color);
 }
 ```
 
