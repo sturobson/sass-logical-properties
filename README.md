@@ -30,7 +30,7 @@ To use the mixins and functions in your project, simply import the package into 
 
 ### Logical Margin
 
-Use the logical-margin mixin to apply logical margins based on the flow of the document (left-to-right or right-to-left).
+Use the `logical-`margin` mixin to apply logical margins based on the flow of the document (left-to-right or right-to-left).
 
 ```scss
 .example {
@@ -40,7 +40,7 @@ Use the logical-margin mixin to apply logical margins based on the flow of the d
 
 ### Logical Padding
 
-Use the logical-padding mixin to apply logical paddings.
+Use the `logical-padding` mixin to apply logical paddings.
 
 ```scss
 .example {
@@ -50,7 +50,7 @@ Use the logical-padding mixin to apply logical paddings.
 
 ### Border Radius
 
-You can also apply logical border-radius using the logical-border-radius mixin:
+You can also apply logical border-radius using the `logical-border-radius` mixin:
 
 ```scss
 .example {
@@ -62,7 +62,7 @@ You can also apply logical border-radius using the logical-border-radius mixin:
 
 ### process-value
 
-This function processes a value and automatically converts CSS custom properties from the format --value to var(--value).
+This function processes a value and automatically converts CSS custom properties from the format `--value` to `var(--value)`.
 
 ```scss
 .example {
@@ -72,13 +72,13 @@ This function processes a value and automatically converts CSS custom properties
 
 ## Available Mixins
 
- • logical-margin($side, $value): Sets logical margin based on the side.
- • logical-padding($side, $value): Sets logical padding based on the side.
- • logical-border($side, $value): Sets logical border based on the side.
- • logical-border-style($side, $value): Sets logical border style.
- • logical-border-color($side, $value): Sets logical border color.
- • logical-border-width($side, $value): Sets logical border width.
- • logical-border-radius($corner, $value): Sets logical border radius based on the corner.
+- `logical-margin`(`$side`, `$value`): Sets logical margin based on the side.
+- `logical-padding`(`$side`, `$value`): Sets logical padding based on the side.
+- `logical-border`(`$side`, `$value`): Sets logical border based on the side.
+- `logical-border-style`(`$side`, `$value`): Sets logical border style.
+- `logical-border-color`(`$side`, `$value`): Sets logical border color.
+- `logical-border-width`(`$side`, `$value`): Sets logical border width.
+- `logical-border-radius`(`$corner`, `$value`): Sets logical border radius based on the corner.
 
 ## Development
 
@@ -111,10 +111,10 @@ npm run watch
 Contributions are welcome! If you’d like to contribute, please follow these steps:
 
  1. Fork the repository.
- 2. Create a new branch (git checkout -b my-feature-branch).
+ 2. Create a new branch (`git checkout -b my-feature-branch`).
  3. Make your changes.
- 4. Commit your changes (git commit -m 'Add new feature').
- 5. Push to the branch (git push origin my-feature-branch).
+ 4. Commit your changes (`git commit -m 'Add new feature'`).
+ 5. Push to the branch (`git push origin my-feature-branch`).
  6. Open a pull request.
 
 ## License
